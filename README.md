@@ -43,9 +43,9 @@ struct Edge {
     Edge(int u, int v, int weight) : u(u), v(v), weight(weight) {}
 };
 
-// Kruskal's Algorithm
+
 vector<Edge> kruskal(int V, vector<Edge>& edges) {
-    // Sort edges by weight
+   
     sort(edges.begin(), edges.end(), [](Edge& e1, Edge& e2) {
         return e1.weight < e2.weight;
     });
